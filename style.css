@@ -83,5 +83,20 @@ body {
   background-color: rgb(173, 128, 68);
   border-radius: 10px 4px 4px 4px;
   box-shadow: 0 0 10px rgba(41, 40, 40, 0.301);
+  opacity: .8;
 }
 
+.left-col {
+  background: linear-gradient(
+    180deg,
+    rgba(175, 140, 80, 0.84) 6.25%,
+    rgba(242, 105, 113, 0) 100%
+  );
+  border-radius: 10px 4px 4px 4px;
+}
+
+.left-col-img img {
+  margin-left: 40px;
+  border-radius: 3px;
+  padding-bottom: 40px;
+}
