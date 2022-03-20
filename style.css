@@ -100,3 +100,16 @@ body {
   border-radius: 3px;
   padding-bottom: 40px;
 }
+
+.steps-number {
+  position: relative;
+  background-color: #eaca7b;
+  text-align: center;
+  padding: 5px 9px;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: bold;
+}
+.steps-text {
+  font-size: 18px;
+}
