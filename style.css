@@ -63,4 +63,15 @@ body {
   }
 /*END OF NAVBAR*/
 
+/*PIZZA ORDER*/
+.pizza-order,
+.pizza-orderlist {
+  height: 100vh;
+  position:relative;
+}
+
+.pizza-orderlist,
+.view-cart {
+  display: none;
+}
 
