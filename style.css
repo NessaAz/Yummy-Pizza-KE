@@ -118,3 +118,13 @@ label,
 input {
   cursor: pointer;
 }
+
+select.form-control {
+  background-color: #f1c579;
+  color: #fff;
+}
+
+input[type="checkbox"] {
+  background-color: #f7c260;
+}
+
