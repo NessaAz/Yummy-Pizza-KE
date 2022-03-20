@@ -113,3 +113,8 @@ body {
 .steps-text {
   font-size: 18px;
 }
+
+label,
+input {
+  cursor: pointer;
+}
