@@ -143,3 +143,21 @@ input[type="checkbox"] {
 
 /*END OF PIZZA ORDER*/
 
+.checkout-container,
+.feedback-container {
+	height: fit-content;
+	top: 10%;
+	cursor: text;
+	color: #fff;
+	line-height: 3em;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
+	display: none;
+	z-index: 2;
+}
+
+.checkout-overlay {
+	z-index: 1;
+}
+
+.checkout-container input {
+	cursor: text;
