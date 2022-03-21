@@ -195,7 +195,7 @@
                             <tr>
                                 <td>
                                     <button class="view-cart btn btn-info btn-block">
-                                        View Cart Items
+                                         View Cart Items
                                     </button>
                                 </td>
                             </tr>
@@ -232,6 +232,46 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="checkout-modal">
+        <div class="checkout-overlay"></div>
+        <div class="checkout-container">
+            <h3 class="checkout-content pt-5 pb-2">
+                Please enter delivery details
+            </h3>
+            <input
+                class="form-control col-lg-9 mx-auto mt-4"
+                type="text"
+                name="location"
+                placeholder="CBD"
+                id="location"
+            />
+            <button class="place-order btn btn-info my-4">Place Order</button>
+        </div>
+        <div class="feedback-container p-5">
+            <h3 class="pt-2 pb-2">Thank you for shopping with us!</h3>
+            <h5 class="text-center">Here is Your Order Summary</h5>
+            <ol class="text-left ml-5">
+                <li class="list-item">
+                    Number of orders: <span class="cart-count"></span>
+                </li>
+                <li class="list-item">
+                    Dispatch Method: <span class="dispatch text-capitalize"></span>
+                </li>
+                <li class="list-item">
+                    Dispatch Cost: ksh<span class="dispatch-cost"></span>
+                </li>
+                <li class="list-item">
+                    Dispatch Location:
+                    <span class="dispatch-location text-capitalize"></span>
+                </li>
+                <li class="list-item">
+                    Total order cost: ksh<span class="grand-total"></span>
+                </li>
+            </ol>
+            <button class="back-home btn btn-danger mx-3">Home</button>
+            <button class="back-to-cart btn btn-info mx-3">View Orders</button>
         </div>
     </section>
 

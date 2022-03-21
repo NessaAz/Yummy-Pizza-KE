@@ -108,3 +108,5 @@ const calcCost = function () {
 	[cost.total, cost.pizza, cost.toppings, cost.dispatch] = price.order(this);
 	return cost;
 };
+
+
