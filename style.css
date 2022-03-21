@@ -161,3 +161,61 @@ input[type="checkbox"] {
 
 .checkout-container input {
 	cursor: text;
+}
+
+.checkout-modal {
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url(/images/cheesetopping.jpg);
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+.error-overlay,
+.checkout-overlay {
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.397);
+	height: 100%;
+	width: 100%;
+	z-index: 3;
+}
+
+.error-container,
+.checkout-container,
+.feedback-container {
+	background-color: #f2b269ce;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.692);
+	border-radius: 4px;
+	height: 90px;
+	line-height: 45px;
+	top: 0;
+	left: 50%;
+	position: absolute;
+	text-align: center;
+	transform: translate(-50%, 0);
+	width: 30em;
+	z-index: 5;
+}
+.close-error {
+	background-color: #fff;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	position: inherit;
+	right: 0;
+	margin: 3px 3px 0 0;
+}
+
+.error {
+	padding: 20px 20px;
+	font-size: 18px;
+}
+
+.close-error:hover {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.568);
+	color: #f2b769;
+	cursor: pointer;
+	transition: all 0.2s;
+}
