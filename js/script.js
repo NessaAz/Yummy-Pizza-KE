@@ -26,3 +26,13 @@ $(document).ready(function () {
 	});
 });
 
+let ordersArray = [];
+
+
+const price = {
+	size: { small: 300, medium: 500, large: 800 },
+	crust: { stuffed: 100, crispy: 150, gf: 200 },
+	delivery: 125,
+	pickup: 0,
+
+}
