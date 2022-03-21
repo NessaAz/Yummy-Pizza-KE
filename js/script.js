@@ -117,3 +117,10 @@ const placeOrder = () => {
 	$(".dispatch-location").text(location);
 	$(".checkout-container, .feedback-container").slideToggle("slow");
 };
+
+const alertPlacedOrder = () => {
+	$(".error-overlay").css("z-index", "0");
+	formError("Order placed successfully. Proceed to cart to finalize it");
+	$(".error-overlay").css("z-index", "3");
+	return $(".error-modal").slideUp("slow");
+};
