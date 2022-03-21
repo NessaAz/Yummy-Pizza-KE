@@ -34,7 +34,7 @@ const price = {
 	crust: { stuffed: 100, crispy: 150, gf: 200 },
 	delivery: 125,
 	pickup: 0,
-    toppings: { cheese: 50, onions: 30, tomatoes: 40, chicken: 100 },
+    toppings: { cheese: 50, onions: 30, kachumabri: 40, chillies: 100 },
 	totalCost: 0,
 	order: function (order) {
 		let toppings = 0;
@@ -93,3 +93,12 @@ const orderList = (order) => {
 	$(".grand-total").text(price.totalCost);
 };
 
+const Order = function (size, crust, toppings, dispatch) {
+	this.size = size;
+	this.crust = crust;
+	this.toppings = toppings;
+	this.dispatch = dispatch;
+	this.orderTime = new Date();
+	this.orderNumber = (Math.random() * 1000000).toFixed();
+	this.cost = this.getCosts();
+};
