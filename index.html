@@ -42,139 +42,167 @@
         </header>
 
 
-		<div class="container form-container">
-			<div class="row">
-				<div class="col-md-3 left-col">
-					<h2 class="pt-5 pb-2 text-right">Yummy</h2>
-					<div class="left-col-img d-none d-md-block">
-						<img src="/images/halfbaconhalfbeef.jpg" width="100%" alt="Today's special pizza"/>
-					</div>
-                    <div class="col-lg-6 right-col py-5 pl-5">
-						<h3 class="text-center pb-2">Your Order</h3>
-						<form class="pizza-form">
-							<div class="form-group mb-4">
-								<label for="pizza-size"
-									><span class="steps-number">1</span
-									><span class="pl-3 steps-text">Choose Size</span></label>
-                                    <div class="mx-5">
-									<select class="form-control col-lg-10" id="pizza-size" aria-placeholder="Pizza size">
-										<option value="small">Small</option>
-										<option value="medium">Medium</option>
-										<option value="large">Large</option>
-									</select>
-								</div>
-                                <div class="form-group mb-4">
-                                    <label for="pizza-crust"
-                                        ><span class="steps-number">2</span
-                                        ><span class="pl-3 steps-text">Preferred Crust</span></label
-                                    >
-                                    <div class="mx-5">
-                                        <select
-                                            class="form-control col-lg-10"
-                                            name="crust"
-                                            id="pizza-crust"
-                                        >
-                                            <option value="stuffed">Stuffed</option>
-                                            <option value="crispy">Crispy</option>
-                                            <option value="gf">Gluten Free</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <p>
-                                    <span class="steps-number">3</span
-                                    ><span class="pl-3 steps-text">Toppings</span>
-                                </p>
-                                <div class="row mb-3">
-                                    <div class="col-2 ml-5">
-                                        <div class="form-check">
-                                            <input
-                                                type="checkbox"
-                                                name="cheese"
-                                                id="cheese"
-                                                class="form-check-input"
-                                                value="cheese"
-                                            />
-                                            <label class="form-label-check" for="cheese">Cheese</label>
-                                        </div>
-                                        <div class="form-check">
-                                           <input type="checkbox" name="kachumbari" id="kachumbari" class="form-check-input" value="kachumbari"/>
-                                            <label class="form-label-check" for="kachumbari"
-                                                >Kachumbari</label
-                                            >
-                                        </div>
-                                    </div>
-                                    <div class="col-2 ml-5">
-                                        <div class="form-check">
-                                            <input type="checkbox" name="onions" id="onions" class="form-check-input" value="onions"/>
-                                            <label class="form-label-check" for="onions">Onion Rings</label>
-                                        </div>
-                                        <div class="form-check">
-                                            <input type="checkbox" name="chilli" id="chilli" class="form-check-input" value="chilli"/>
-                                            <label class="form-label-check" for="chilli"
-                                                >Chilli</label
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <p>
-                                    <span class="steps-number">4</span
-                                    ><span class="pl-3 steps-text">Dispatch</span>
-                                </p>
-                                <div class="form-check-inline ml-5">
-                                    <input type="radio" class="form-check-input" name="dispatch" id="pickup" value="pickup"/>
-                                    <label class="form-check-label" for="pickup">Pickup</label>
-                                </div>
-                                <div class="form-check-inline">
-                                    <input type="radio" class="form-check-input" name="dispatch" id="delivery" value="delivery"/>
-                                    <label class="form-check-label" for="delivery">Delivery</label>
-                                </div>
-    
-							</div>
-                            <div class="d-flex mt-3">
-								<p class="my-auto"><span class="steps-number">5</span></p>
-								<button class="btn btn-danger mx-3" type="submit">
-									Add to Cart
-								</button>
-							</div>
-						</form>
-					</div>
-                        </form>                
+        <div class="container form-container">
+            <div class="row">
+                <div class="col-lg-3 left-col">
+                    <h2 class="pt-5 pb-2 text-right">Yummy</h2>
+                    <div class="left-col-img d-none d-lg-block">
+                        <img
+                            src="./images/thickpinkcrustsmall.jpg"
+                            width="100%"
+                            alt="Pizza with Chillies"
+                        />
                     </div>
-                    <div class="order-summary px-3 d-none col-lg-3 d-lg-block mx-0">
-						<h5 class="pt-5 pb-2 pl-3">Summary</h5>
-						<table class="table table-border">
-							<tbody>
-								<tr>
-									<td>Number of Pizzas: <small class="cart-count">0</small></td>
-								</tr>
-								<tr>
-									<td>
-										Dispatch:
-										<small class="dispatch text-capitalize">None</small>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										Total Charge:
-										<strong>Ksh <span class="pizza-cost">0</span></strong>
-									</td>
-								</tr>
-								<tr>
-									<td>
-										<button class="view-cart btn btn-info btn-block">
-											View Cart Items
-										</button>
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-			</div>
-		</section>
-
                 </div>
-            </div>        		
+                <div class="col-md-4 right-col py-5 pl-5">
+                    <h3 class="text-center pb-2">Your Order</h3>
+                    <form class="pizza-form">
+                        <div class="form-group mb-4">
+                            <label for="pizza-size"
+                                ><span class="steps-number">1</span
+                                ><span class="pl-3 steps-text">Choose Size</span>
+                                </label>
+                            <div class="mx-5">
+                                <select class="form-control col-md-10" id="pizza-size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="pizza-crust"
+                                ><span class="steps-number">2</span
+                                ><span class="pl-3 steps-text">Preferred Crust</span>
+                            </label>
+                            <div class="mx-5">
+                                <select
+                                    class="form-control col-md-10"
+                                    name="crust"
+                                    id="pizza-crust">
+                                    <option value="stuffed">Stuffed</option>
+                                    <option value="crispy">Crispy</option>
+                                    <option value="gf">Gluten Free</option>
+                                </select>
+                            </div>
+                        </div>
+                        <p>
+                            <span class="steps-number">3</span
+                            ><span class="pl-3 steps-text">Toppings</span>
+                        </p>
+                        <div class="row mb-3">
+                            <div class="col-2 ml-5">
+                                <div class="form-check">
+                                    <input
+                                        type="checkbox"
+                                        name="cheese"
+                                        id="cheese"
+                                        class="form-check-input"
+                                        value="cheese"
+                                    />
+                                    <label class="form-label-check" for="cheese">Cheese</label>
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        type="checkbox"
+                                        name="kachumbari"
+                                        id="kachumbari"
+                                        class="form-check-input"
+                                        value="kachumbari"
+                                    />
+                                    <label class="form-label-check" for="kachumbari"
+                                        >Kachumbari</label
+                                    >
+                                </div>
+                            </div>
+                            <div class="col-2 ml-5">
+                                <div class="form-check">
+                                    <input
+                                        type="checkbox"
+                                        name="onions"
+                                        id="onions"
+                                        class="form-check-input"
+                                        value="onions"
+                                    />
+                                    <label class="form-label-check" for="onions">Onion Rings</label>
+                                </div>
+                                <div class="form-check">
+                                    <input
+                                        type="checkbox"
+                                        name="chillies"
+                                        id="chillies"
+                                        class="form-check-input"
+                                        value="chillies"
+                                    />
+                                    <label class="form-label-check" for="chillies"
+                                        >Chillies</label
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <span class="steps-number">4</span
+                            ><span class="pl-3 steps-text">Dispatch</span>
+                        </p>
+                        <div class="form-check-inline ml-5">
+                            <input
+                                type="radio"
+                                class="form-check-input"
+                                name="dispatch"
+                                id="pickup"
+                                value="pickup"
+                            />
+                            <label class="form-check-label" for="pickup">Pickup</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input
+                                type="radio"
+                                class="form-check-input"
+                                name="dispatch"
+                                id="delivery"
+                                value="delivery"
+                            />
+                            <label class="form-check-label" for="delivery">Delivery</label>
+                        </div>
+
+                        <div class="d-flex mt-3">
+                            <p class="my-auto"><span class="steps-number">5</span></p>
+                            <button class="btn btn-danger mx-3" type="submit">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="order-summary px-3 d-none col-lg-3 d-lg-block mx-0">
+                    <h5 class="pt-5 pb-2 pl-3">Order Summary</h5>
+                    <table class="table table-border">
+                        <tbody>
+                            <tr>
+                                <td>Number of Pizzas: <small class="cart-count">0</small></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Dispatch:
+                                    <small class="dispatch text-capitalize">None</small>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Total Charges:
+                                    <strong>Ksh <span class="pizza-cost">0</span></strong>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="view-cart btn btn-info btn-block">
+                                        View Cart Items
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div> 
     </div> 
     <script src="./js/bl-yummy.js"></script>
