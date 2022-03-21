@@ -143,6 +143,9 @@ input[type="checkbox"] {
 
 /*END OF PIZZA ORDER*/
 
+
+/*CHECK OUT CONTAINER*/
+
 .checkout-container,
 .feedback-container {
 	height: fit-content;
@@ -219,3 +222,5 @@ input[type="checkbox"] {
 	cursor: pointer;
 	transition: all 0.2s;
 }
+
+/*END OF CHECKOUT CONTAINER*/
