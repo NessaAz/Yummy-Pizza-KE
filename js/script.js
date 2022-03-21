@@ -72,3 +72,24 @@ const validateForm = (submit) => {
 	return orderList(new Order(pizzaSize, pizzaCrust, toppings, dispatch.val()));
 };
 
+
+const orderList = (order) => {
+	ordersArray.push(order);
+	alertPlacedOrder();
+	const orderItem = `
+		<tr class="order-item">
+		<td class="text-capitalize">${order.orderNumber}</td>
+			<td class="text-capitalize">${order.size}: ksh ${price.size[order.size]}</td>
+			<td class="text-capitalize">${order.crust}: ksh ${price.crust[order.crust]}</td>
+			<td class="text-capitalize">${order.cost.toppings[1]}</td>
+			<td class="text-capitalize">Ksh ${order.cost.pizza}</td>
+		</tr>`;
+	$(".cart-count").text(ordersArray.length);
+	$(".dispatch").text(order.dispatch);
+	$(".dispatch-cost").text(order.cost.dispatch);
+	$(".pizza-cost").text(order.cost.pizza);
+	$(".cart-items").append(orderItem);
+	$(".total-cost").text(order.cost.total);
+	$(".grand-total").text(price.totalCost);
+};
+
