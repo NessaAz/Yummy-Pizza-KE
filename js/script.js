@@ -34,7 +34,7 @@ const price = {
 	crust: { stuffed: 100, crispy: 150, gf: 200 },
 	delivery: 125,
 	pickup: 0,
-    toppings: { cheese: 50, onions: 30, kachumabri: 40, chillies: 100 },
+    toppings: { cheese: 50, onions: 30, kachumbari: 40, chillies: 100 },
 	totalCost: 0,
 	order: function (order) {
 		let toppings = 0;
@@ -70,6 +70,7 @@ const validateForm = (submit) => {
 	$(".view-cart").slideDown("slow");
 	$(".pizza-form").trigger("reset");
 	return orderList(new Order(pizzaSize, pizzaCrust, toppings, dispatch.val()));
+    hide.navbar()
 };
 
 
