@@ -66,76 +66,80 @@ body {
 /*PIZZA ORDER*/
 .pizza-order,
 .pizza-orderlist {
-  height: 100vh;
-  position:relative;
+	height: 100vh;
+	position: relative;
 }
 
 .pizza-orderlist,
-.view-cart {
-  display: none;
+.view-cart,
+.error-modal,
+.checkout-modal {
+	display: none;
 }
-
 .form-container {
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  background-color: rgb(173, 128, 68);
-  border-radius: 10px 4px 4px 4px;
-  box-shadow: 0 0 10px rgba(41, 40, 40, 0.301);
-  opacity: .8;
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	border-radius: 10px 4px 4px 4px;
+	box-shadow: 0 0 10px rgba(41, 40, 40, 0.301);
+  opacity: .85;
 }
 
 .left-col {
-  background: linear-gradient(
-    180deg,
-    rgba(175, 140, 80, 0.84) 6.25%,
-    rgba(242, 105, 113, 0) 100%
-  );
-  border-radius: 10px 4px 4px 4px;
+	background: linear-gradient(
+		180deg,
+		rgba(231, 166, 106, 0.84) 6.25%,
+		rgba(242, 105, 113, 0) 100%
+	);
+	border-radius: 10px 4px 4px 4px;
 }
 
 .left-col-img img {
-  margin-left: 40px;
-  border-radius: 3px;
-  padding-bottom: 40px;
+	margin-left: 40px;
+	border-radius: 3px;
+	padding-bottom: 40px;
 }
 
 .steps-number {
-  position: relative;
-  background-color: #4d3f2f;
-  text-align: center;
-  padding: 5px 9px;
-  color: rgb(233, 214, 192);
-  border-radius: 50%;
-  font-weight: bold;
+	position: relative;
+	background-color: #f2a969;
+	text-align: center;
+	padding: 5px 9px;
+	color: #fff;
+	border-radius: 50%;
+	font-weight: bold;
 }
 .steps-text {
-  font-size: 16px;
+	font-size: 18px;
 }
-
 label,
 input {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 select.form-control {
-  background-color: #cfa863;
-  color: rgb(216, 161, 114);
+	background-color: #f2b469;
+	color: #fff;
 }
 
 input[type="checkbox"] {
-  background-color: #4b3c22;
+	background-color: #e37d4e;
 }
 
 .order-summary {
-  background: linear-gradient(
-    180deg,
-    rgba(245, 186, 96, 0.84) 6.25%,
-    rgba(242, 105, 113, 0.3) 100%
-  );
+	background: linear-gradient(
+		180deg,
+		rgba(202, 125, 73, 0.84) 6.25%,
+		rgba(242, 105, 113, 0.3) 100%
+	);
 }
 
 .order-item td {
-  font-size: 12px;
+	font-size: 12px;
 }
+
+
+/*END OF PIZZA ORDER*/
+

@@ -12,9 +12,7 @@
     <link rel="icon" type="image/x-icon" href="./icons/bittenpizzaslice.png">
 </head>
 <body>
-    <img class="bg-img img-fluid" src="./images/3pizzas.jpg" alt="Yummy Pizza Ke signature">
-    <div>
-        <header>        
+    <header>        
         <nav class="navbar navbar-expand-lg fixed-top py-5">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
                 <img src="./icons/pizzasclice.png" alt="menu icon">
@@ -39,31 +37,32 @@
                 </ul>
             </div>                                                                                                                                                                                                          
         </nav>
-        </header>
-
-
+    </header
+    
+    <section class="pizza-order">
+        <img class="bg-img img-fluid" src="./images/3pizzas.jpg" alt="">
         <div class="container form-container">
             <div class="row">
                 <div class="col-lg-3 left-col">
                     <h2 class="pt-5 pb-2 text-right">Yummy</h2>
                     <div class="left-col-img d-none d-lg-block">
-                        <img
-                            src="./images/thickpinkcrustsmall.jpg"
+                       <img
+                            src="./images/3pizzas.jpg"
                             width="100%"
-                            alt="Pizza with Chillies"
+                            alt="Pizza Image"
                         />
                     </div>
                 </div>
-                <div class="col-md-4 right-col py-5 pl-5">
-                    <h3 class="text-center pb-2">Your Order</h3>
-                    <form class="pizza-form">
+                <div class="col-lg-6 right-col py-5 pl-5">
+                   <h3 class="text-center pb-2">Your Order</h3>
+                   <form class="pizza-form">
                         <div class="form-group mb-4">
                             <label for="pizza-size"
                                 ><span class="steps-number">1</span
-                                ><span class="pl-3 steps-text">Choose Size</span>
-                                </label>
+                                ><span class="pl-3 steps-text">Pizza Size</span></label
+                            >
                             <div class="mx-5">
-                                <select class="form-control col-md-10" id="pizza-size">
+                                <select class="form-control col-lg-10" id="pizza-size" aria-placeholder="small/medium/large">
                                     <option value="small">Small</option>
                                     <option value="medium">Medium</option>
                                     <option value="large">Large</option>
@@ -73,13 +72,14 @@
                         <div class="form-group mb-4">
                             <label for="pizza-crust"
                                 ><span class="steps-number">2</span
-                                ><span class="pl-3 steps-text">Preferred Crust</span>
-                            </label>
+                                ><span class="pl-3 steps-text">Preferred Crust</span></label
+                            >
                             <div class="mx-5">
                                 <select
-                                    class="form-control col-md-10"
+                                    class="form-control col-lg-10"
                                     name="crust"
-                                    id="pizza-crust">
+                                    id="pizza-crust"
+                                >
                                     <option value="stuffed">Stuffed</option>
                                     <option value="crispy">Crispy</option>
                                     <option value="gf">Gluten Free</option>
@@ -111,7 +111,7 @@
                                         value="kachumbari"
                                     />
                                     <label class="form-label-check" for="kachumbari"
-                                        >Kachumbari</label
+                                        >Kachu</label
                                     >
                                 </div>
                             </div>
@@ -124,7 +124,7 @@
                                         class="form-check-input"
                                         value="onions"
                                     />
-                                    <label class="form-label-check" for="onions">Onion Rings</label>
+                                    <label class="form-label-check" for="onions">Onions</label>
                                 </div>
                                 <div class="form-check">
                                     <input
@@ -182,13 +182,13 @@
                             </tr>
                             <tr>
                                 <td>
-                                    Dispatch:
+                                    Dispatch method:
                                     <small class="dispatch text-capitalize">None</small>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    Total Charges:
+                                    Total Charge:
                                     <strong>Ksh <span class="pizza-cost">0</span></strong>
                                 </td>
                             </tr>
@@ -203,10 +203,41 @@
                     </table>
                 </div>
             </div>
-        </div> 
-    </div> 
+       </section>
+       <section class="pizza-orderlist">
+          <div class="container form-container">
+             <div class="row">
+                <div class="col-lg-3 left-col">
+                    <h2 class="pt-3 text-center">Yummy Pizza</h2>
+                    <div class="left-col-img d-none d-lg-block">
+                    </div>
+                </div>
+                <div class="col-lg-9 pl-4 pr-2">
+                    <h3 class="text-center pt-3">Order Summary</h3>
+                    <table class="table table-stripped table-light">
+                        <thead>
+                            <tr class="text-primary">
+                                <th scope="col">Order #</th>
+                                <th scope="col">Size</th>
+                                <th scope="col">Crust</th>
+                                <th scope="col">Toppings</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody class="cart-items"></tbody>
+                    </table>
+                    <div class="text-center">
+                        <button class="back btn btn-danger mx-3">Go Back</button>
+                        <button class="checkout btn btn-danger mx-3">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <script src="./js/script.js"></script>
     <script src="./js/bl-yummy.js"></script>
+    </section>
     <script src="./js/ui-yummy.js"></script>
-    
 </body>
 </html>
