@@ -58,3 +58,17 @@ const formError = (error) => {
 	});
 };
 
+const validateForm = (submit) => {
+	submit.preventDefault();
+	let toppingInputs = $("input[type='checkbox']:checked");
+	if (toppingInputs.length === 0) return formError("Please select topping(s)");
+	const dispatch = $("input[name='dispatch']:checked");
+	if (dispatch.length === 0) return formError("Please select dispatch process");
+	const pizzaSize = $("#pizza-size").val();
+	const pizzaCrust = $("#pizza-crust").val();
+	const toppings = toppingInputs.map((i, input) => input.value);
+	$(".view-cart").slideDown("slow");
+	$(".pizza-form").trigger("reset");
+	return orderList(new Order(pizzaSize, pizzaCrust, toppings, dispatch.val()));
+};
+
