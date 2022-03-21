@@ -13,8 +13,9 @@ $(document).ready(function () {
 		$(".pizza-orderlist, .pizza-order").slideToggle("slow");
 	});
 	$(".place-order").click(placeOrder);
-	$(".checkout").click(function () {
-		for (const order of ordersArray) {
+	$(".checkout").on("click",function(){
+		$("#navigation").hide()
+        for (const order of ordersArray) {
 			if (order.dispatch === "delivery" && !order.location)
 				return ($(
 					".checkout-modal, .checkout-container, .pizza-orderlist"
@@ -23,7 +24,7 @@ $(document).ready(function () {
 		$(".checkout-modal, .feedback-container, .pizza-orderlist").slideToggle(
 			"slow"
 		);
-	});
+	})
 });
 
 let ordersArray = [];

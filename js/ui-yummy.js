@@ -3,7 +3,7 @@ const price = {
 	crust: { stuffed: 100, crispy: 150, gf: 200 },
 	delivery: 125,
 	pickup: 0,
-    toppings: { cheese: 50, onions: 30, kachumbari: 40, chillies: 100 },
+    toppings: { cheese: 100, onions: 70, kachumbari: 80, chillies: 200 },
 	totalCost: 0,
 	order: function (order) {
 		let toppings = 0;
@@ -82,7 +82,7 @@ const calcCost = function () {
 const placeOrder = () => {
 	const location = $("#location").val();
 	if (location === "") return formError("Please enter delivery location");
-	if (location.length < 8) return formError("Location name is too short");
+	if (location.length < 4) return formError("Location name is too short");
 	Order.prototype.location = location;
 	$(".dispatch-location").text(location);
 	$(".checkout-container, .feedback-container").slideToggle("slow");
