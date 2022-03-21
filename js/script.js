@@ -102,3 +102,9 @@ const Order = function (size, crust, toppings, dispatch) {
 	this.orderNumber = (Math.random() * 1000000).toFixed();
 	this.cost = this.getCosts();
 };
+
+const calcCost = function () {
+	let cost = {};
+	[cost.total, cost.pizza, cost.toppings, cost.dispatch] = price.order(this);
+	return cost;
+};
