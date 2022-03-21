@@ -49,3 +49,12 @@ const price = {
 		return [total, pizza, [toppings, eachToppingCost], this[order.dispatch]];
 	},
 }
+
+const formError = (error) => {
+	$(".error").text(error);
+	$(".error-modal").slideDown("slow");
+	$(".close-error,.error-overlay").click(function () {
+		return $(".error-modal").hide("fast");
+	});
+};
+
