@@ -109,4 +109,11 @@ const calcCost = function () {
 	return cost;
 };
 
-
+const placeOrder = () => {
+	const location = $("#location").val();
+	if (location === "") return formError("Please enter delivery location");
+	if (location.length < 8) return formError("Location name is too short");
+	Order.prototype.location = location;
+	$(".dispatch-location").text(location);
+	$(".checkout-container, .feedback-container").slideToggle("slow");
+};
