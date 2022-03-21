@@ -34,5 +34,18 @@ const price = {
 	crust: { stuffed: 100, crispy: 150, gf: 200 },
 	delivery: 125,
 	pickup: 0,
-
+    toppings: { cheese: 50, onions: 30, tomatoes: 40, chicken: 100 },
+	totalCost: 0,
+	order: function (order) {
+		let toppings = 0;
+		let eachToppingCost = [];
+		for (const topping of order.toppings) {
+			toppings += this.toppings[topping];
+			eachToppingCost.push(`${topping}: ksh ${this.toppings[topping]}`);
+		}
+		const pizza = this.size[order.size] + this.crust[order.crust] + toppings;
+		const total = pizza + this[order.dispatch];
+		this.totalCost += total;
+		return [total, pizza, [toppings, eachToppingCost], this[order.dispatch]];
+	},
 }
